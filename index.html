@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda_PreEntrega_JS</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
-        <h1> Nuestras Agendas</h1>
-        <div id="agendas"></div>
-        <div id="carrito">
-            <h2>Carrito de Compras</h2>
-            <ul id="carrito-lista"></ul>
-            <p>Total: $<span id="total">0</span> USD</p>
-            <button id="aceptar-compra">Aceptar Compra</button>
-            <div id="mensaje-final"></div>
+        <h1>Agendas 2024</h1>
+        <!-- Formulario para ingresar nombre de usuario -->
+        <div class="formulario">
+            <label for="nombre">Ingresa tu nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <button id="btn-ingresar">Ingresar</button>
         </div>
+        <div id="agendas" class="agendas-container"></div>
+        <div id="carrito">
+            <h2>Carrito</h2>
+            <ul id="carrito-lista"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="aceptar-compra">Aceptar Compra</button>
+        </div>
+        <div id="mensaje-final"></div>
     </div>
-
     <script src="./ventadeagendas.js"></script>
 </body>
 

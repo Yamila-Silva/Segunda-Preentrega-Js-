@@ -1,4 +1,5 @@
-body{
+/* Estilos generales */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -19,11 +20,59 @@ h1 {
     margin-bottom: 20px;
 }
 
-.agenda {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+/* Formulario */
+.formulario {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.formulario button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+/* Agendas */
+.agendas-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.agenda {
+    width: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    padding: 21px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.agenda img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .agenda p {
@@ -35,7 +84,7 @@ h1 {
     color: #fff;
     border: none;
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -43,6 +92,7 @@ h1 {
     background-color: #0056b3;
 }
 
+/* Carro */
 #carrito {
     margin-top: 20px;
     border-top: 2px solid #007bff;
@@ -77,8 +127,15 @@ h1 {
     background-color: #218838;
 }
 
+/* Mensaje final */
 #mensaje-final {
     text-align: center;
     font-size: 18px;
     margin-top: 20px;
+}
+
+/* Nombre del usuario */
+#nombre-usuario {
+    font-weight: bold;
+    color: #007bff;
 }
